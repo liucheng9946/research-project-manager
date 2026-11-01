@@ -73,7 +73,7 @@ if errorlevel 1 (
 echo.
 echo 正在启动,浏览器将自动打开 http://localhost:8501
 echo 关闭本窗口即可退出软件。若提示端口被占用,请先关闭已打开的本软件窗口。
-".venv\Scripts\python.exe" -m streamlit run app.py --server.port 8501 --browser.gatherUsageStats false
+".venv\Scripts\python.exe" -m streamlit run app.py --server.port 8501 --server.headless false --browser.gatherUsageStats false
 if errorlevel 1 (
     echo.
     echo [错误] 软件异常退出,请查看上方的错误信息。

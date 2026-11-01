@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+data/database/*.db
+data/database/*.db-journal
+data/database/*.db-wal
+data/database/*.db-shm
+data/exports/*
+!data/exports/.gitkeep
+backups/*
+!backups/.gitkeep
+.streamlit/secrets.toml
